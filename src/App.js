@@ -10,6 +10,10 @@ class App extends Component {
     identity: []
   }
 
+  componentDidMount = () => {
+    this.getUser();
+  }
+
   
   getUser = () => {
     axios.get('https://randomuser.me/api/?results=9')
